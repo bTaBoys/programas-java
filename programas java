@@ -1,0 +1,339 @@
+/******************************************************************************
+
+Pedro Cabrera - Calculadora em C
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int a= 22, b=223, soma, prod, divisao, subtracao, resto ;
+    
+    // Processamento
+    
+    soma = a + b;
+    prod = a * b;
+    divisao = a / b;
+    subtracao = a - b;
+    resto = b % a;
+    
+    //saída
+    
+    printf("Soma = %d", soma);
+    printf("\nprod = %d", prod);
+    printf("\ndivisao = %d", divisao);
+    printf("\nsubtracao = %d", subtracao);
+    printf("\nresto = %d", resto);
+    
+    // printf ("\nsoma=%d prod=%d", prod, soma);
+    
+    return 0;
+}
+
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+Pedro Cabrera - Calculadora em C p2
+
+*******************************************************************************/
+#include <stdio.h>
+
+int soma (int a, int b)
+{
+    return a + b;
+}
+
+int subtracao (int a, int b)
+{
+    return a - b
+}
+
+int prod (int a, int b)
+{
+    return a * b
+}
+
+int divisao (int a, int b)
+{
+    return a / b
+}
+
+int main()
+{
+    int a= 22, b=223;
+    
+    // Processamento
+    
+    //saída
+    
+    printf("Soma = %d", soma(a,b));
+    printf("\nprod = %d", prod(a,b));
+    printf("\ndivisao = %d", divisao(a,b));
+    printf("\nsubtracao = %d", subtracao(a,b));
+    printf("\nresto = %d", resto(a,b));
+    
+    return 0;
+}
+
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+Pedro Cabrera - Calculadora em C p3
+
+*******************************************************************************/
+#include <stdio.h>
+
+int soma (int a, int b)
+{
+    return a + b;
+}
+
+int subtracao (int a, int b)
+{
+    return b - a;
+}
+
+int prod (int a, int b)
+{
+    return a * b;
+}
+
+int divisao (int a, int b)
+{
+    if (b==0) return 0;
+    return a / b;
+}
+
+int resto (int a, int b)
+{
+    return b % a;
+}
+
+int main()
+{
+    int a= 22, b=0;
+    
+    // Processamento
+    
+    //saída
+    
+    printf("Soma = %d", soma(a,b));
+    printf("\nprod = %d", prod(a,b));
+    printf("\ndivisao = %d", divisao(a,b));
+    printf("\nsubtracao = %d", subtracao(a,b));
+    printf("\nresto = %d", resto(a,b));
+    
+    return 0;
+}
+
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+JAVA SCRIPT
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int a=10, b=2;
+		
+		System.out.println("------------------------");
+		System.out.println("Calculo de soma do A + B");
+		System.out.println("------------------------");
+		System.out.println("soma = " + soma(a,b));
+	}
+	public static int soma(int a, int b) {
+	    return a + b;
+	}
+}
+
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+CALCULADORA EM JAVA SCRIPT P2
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int a=10, b=2;
+		
+		System.out.println("------------------------");
+		System.out.println("      Calculadora");
+		System.out.println("------------------------");
+		System.out.println("soma = " + soma(a,b));
+		System.out.println("subtracao = " + subtracao(a,b));
+		System.out.println("prod = " + prod(a,b));
+		System.out.println("divisao = " + divisao(a,b));
+		System.out.println("resto = " + resto(a,b));
+	}
+	public static int soma(int a, int b) 
+	{
+	return a + b;
+	}
+	public static int subtracao (int a, int b)
+    {
+    return a - b;
+    }
+    public static int prod (int a, int b)
+    {
+    return a * b;
+    }
+    public static int divisao (int a, int b)
+    {
+    if (b==0) return 0;
+    return a / b;
+    }
+    public static int resto (int a, int b)
+    {
+    return a % b;
+    }
+}
+
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+JAVA SCRIPT
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+		String mensa = "olá mundo sdfmnss sdfjs sdfslf sdsdfs" + (10+20);
+		System.out.println( mensa);
+		System.out.println ("tamanho da mensagem= " + mensa.length());
+		System.out.println("em miusculo = " + mensa.toUpperCase());
+		System.out.println("em minusculo = " + mensa.tolowerCase());
+	}
+}
+
+—------------------------------------------------------------------------------------------------------------------------
+
+Java é uma linguagem OO (orientada ao objeto)
+
+Classe -> funcionalidades ou métodos ~ “função” -> tolowerCase
+                                                                                -> toUpperCase
+
+Objeto -> “variável”
+
+String -> String (mensa) -> objeto
+
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+JAVA SCRIPT
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+		String mensa = "Olá Mundo! Fim do Carnaval";
+		System.out.println( mensa);
+		System.out.println ("tamanho da mensagem: " + mensa.length());
+		System.out.println("em miusculo: " + mensa.toUpperCase());
+		System.out.println("em minusculo: " + mensa.toLowerCase());
+		System.out.println("substituindo s por x: " + mensa.replace('s', 'x'));
+		System.out.println("substituindo mundo: " + mensa.replace("mundo", "world"));
+		System.out.println("posicao da letra c é: " + mensa.indexOf('c'));
+		System.out.println("na posicao 10 temos: " + mensa.charAt (11));
+		System.out.println("extraindo uma parte: " + mensa.substring(4,9));
+	}
+}
+
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+JAVA
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+		mensagem();
+		mensagem("que legal");
+		mensagem("cada enxadada uma minhoca");
+	}
+	public static void mensagem() {
+	    System.out.println("olá mundo");
+	}
+	public static void mensagem(String m) {
+	    System.out.println(m);
+	}
+}
+
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+JAVA
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+		mensagem();
+		mensagem("que legal");
+		mensagem("a cada dia" , "um novo aprendizado");
+	}
+	public static void mensagem() {
+	    System.out.println("olá mundo");
+
+	}
+	public static void mensagem(String m) {
+	    System.out.println(m);
+	}
+	public static void mensagem(String m, String n) {
+	    System.out.println(m + " " + n);
+	}
+}
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+JAVA
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("34+88=" + soma(34,88));
+	}
+	public static int soma (int a, int b) {
+	    return a+b;
+	}
+}
+
+—------------------------------------------------------------------------------------------------------------------------
+
+/******************************************************************************
+
+JAVA
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("34+88=" + soma(34,88));
+		potencia (5,3);
+	}
+	public static int soma (int a, int b) {
+	    return a+b;
+	}
+	public static void mensagem(String m) {
+	    System.out.println(m);
+	}
+	public static void potencia (int x, int y) {
+	    mensagem("Potencia " + x + " elevado a " + y + " = " + Math.pow(x,y));
+	}
+}
+
+—------------------------------------------------------------------------------------------------------------------------
